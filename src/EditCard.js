@@ -34,7 +34,7 @@ function EditCard({ deck, setDeck, card, setCard }) {
           edit Deck
         </li>
       </ol>
-      <CardForm  card={card} deck={deck} newCard={newCard} />
+      <CardForm card={card} deck={deck} newCard={newCard} />
     </div>
   );
 }

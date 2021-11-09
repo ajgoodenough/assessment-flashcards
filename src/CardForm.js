@@ -10,7 +10,7 @@ function CardForm({ card, deck, newCard }) {
   const [formData, setFormData] = useState({ ...initialFormState });
 
   useEffect(() => {
-    setFormData()({ ...card });
+    setFormData({ ...card });
   }, [card]);
 
   const cancelHandler = () => {
