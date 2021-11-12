@@ -62,8 +62,9 @@ function Study({ deck, setDeck, currentCardIndex, setCurrentCardIndex }) {
         <h4>{`${deck.name}:`}Study</h4>
         <h5>Not enough Cards.</h5>
         <p>
-          cmon mate you need at least 3 cards to call this "studying"... there
-          are only {deck.cards.length} cards in this deck.
+          You need at least 3 cards to call this "studying"... There's only{" "}
+          {deck.cards.length} cards in this deck. Add {3 - deck.cards.length}{" "}
+          more card(s) to start studying!
         </p>
         <Link
           to={`/decks/${deck.id}/cards/new`}

@@ -18,7 +18,7 @@ function EditCard({ deck, setDeck, card, setCard }) {
     return () => ac.abort();
   }, [setDeck, cardId, deckId, setCard]);
 
-  if (!deck.id) return <h6>one moment please while we load your card...</h6>;
+  if (!deck.id) return <h6>One moment please while we load your card...</h6>;
   return (
     <div>
       <ol className="breadcrumb">
